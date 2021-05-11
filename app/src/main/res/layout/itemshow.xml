@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/tiiresyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="0dp">
+
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/titrestyal"
+
+        android:text="Here will b tewill be the question text\nHere will be the question text\n"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textQuestion">
+
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="07dp"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/selectorbtn"
+            android:padding="18dp"
+            android:text="Option 1"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="07dp"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/selectorbtn"
+            android:padding="18dp"
+            android:text="Option 2"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:textColor="@color/black"
+            android:padding="18dp"
+            android:background="@drawable/radio_selector"
+            android:button="@drawable/selectorbtn"
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Option 3" />
+    </RadioGroup>
+
+</RelativeLayout>

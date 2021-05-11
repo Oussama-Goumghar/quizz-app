@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="quiz">ANDROID QUIZ</string>
+    <string name="kotlin">KOTLIN</string>
+    <string name="andriod">ANDROID</string>
+    <string name="quiz_txt">Ce QCM a été élaboré par un expert des couches applicatives du système d’exploitation Android. Il a pour vocation de permettre de juger du niveau de maturité d’un développeur Android</string>
+    <string name="andriod_txt">Android est le système d exploitation mobile crée par Google. Il équipe la majorité des téléphones portables du moment (smartphones)</string>
+
+    <string name="kotlin_txt">Kotlin est un langage de programmation orientée objet (POO) de type statique, interopérable avec la machine virtuelle Java, les bibliothèques Java et Android.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

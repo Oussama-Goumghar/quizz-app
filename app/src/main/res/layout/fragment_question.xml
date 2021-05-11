@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bluerbk"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/textView"
+                android:layout_width="232dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="150dp"
+                android:src="@drawable/addquestion" />
+
+            <Spinner
+                android:background="@drawable/blue_outline"
+                android:spinnerMode="dropdown"
+
+                android:id="@+id/sChapitre"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textQestion"
+                android:layout_width="296dp"
+                app:boxStrokeColor="@color/white"
+                app:shapeAppearance="@style/Rounded"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ems="10"
+                app:startIconDrawable="@drawable/questionic"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="question"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textOp1"
+                app:startIconDrawable="@drawable/icon1"
+                app:shapeAppearance="@style/Rounded"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="option1"
+                app:boxStrokeColor="@color/white"
+                android:inputType="textPersonName"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textOp2"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:startIconDrawable="@drawable/icon2"
+                app:shapeAppearance="@style/Rounded"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:ems="10"
+                app:boxStrokeColor="@color/white"
+                android:hint="option2"
+                android:inputType="textPersonName"
+                android:padding="10dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textOp3"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                app:startIconDrawable="@drawable/icon3"
+                app:shapeAppearance="@style/Rounded"
+                app:boxStrokeColor="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="option3"
+                android:inputType="textPersonName"
+                android:padding="15dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textAnser"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="15dp"
+                android:hint="anser number"
+                app:boxStrokeColor="@color/white"
+                app:startIconDrawable="@drawable/iconch"
+                app:shapeAppearance="@style/Rounded"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:inputType="number"
+                android:padding="10dp" >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:padding="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/btnaddQ"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:background="@drawable/btnbk"
+                android:textColor="#656565"
+                android:text="add qustion"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floating__button_chap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="bottom|right"
+                android:backgroundTint="#b4ffff"
+                app:srcCompat="@drawable/exit" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

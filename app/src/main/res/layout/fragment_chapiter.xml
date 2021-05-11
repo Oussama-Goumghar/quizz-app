@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bluerbk"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/textView"
+                android:layout_width="148dp"
+                android:layout_height="115dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="13dp"
+                android:padding="9dp"
+                android:src="@drawable/iconschapitre"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/chapiternom"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="chapiter nom"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                app:boxStrokeColor="@color/white"
+                app:shapeAppearance="@style/Rounded"
+                app:startIconDrawable="@drawable/book"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/white" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/btnAdd"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btnbk"
+                android:backgroundTintMode="multiply"
+                android:hapticFeedbackEnabled="false"
+                android:padding="15dp"
+                android:text="add"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating__button_chap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="#b4ffff"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/exit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
